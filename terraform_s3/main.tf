@@ -2,9 +2,8 @@ provider "aws" {
   region = "us-east-1"
 }
 
-module "s3_bucket" {
-  source = "../modules/s3_buckets"
-  bucket_name = "raha-will-go-munich"
-
-}
-
+module "terraform_state" {
+  source = "./"
+  bucket_name = "${var.bucket_name}"
+  dynamodb_table_name = "${dynamodb_table_name}"
+} 
