@@ -1,0 +1,119 @@
+./terraform-provider-libvirt
+.terraform/*
+./*.tf
+*.tfstate
+*.tfstate.backup
+*.test
+*.cov
+terraform-provider-libvirt
+.terraform
+.terraform.lock.hcl
+
+
+
+# Local Terraform directories and lock files
+.terraform/
+.terraform.lock.hcl
+
+# Terraform state files and backup files
+*.tfstate
+*.tfstate.*
+
+# Crash logs
+crash.log
+
+# Extension files and variable files that might contain sensitive data
+*.tfvars
+*.tfvars.json
+
+# Sensitive variable files
+secret.tfvars
+
+# Ignore archive files and backups
+*.zip
+*.tar.gz
+
+# Ignore editor swap files and other temporary files
+*.swp
+*.swo
+*~
+
+# Ignore generated documentation and build artifacts
+*.tfplan
+*.tfplan.json
+
+# IDE and editor specific files
+.vscode/
+.idea/
+.DS_Store
+
+# Ignore log files
+*.log
+
+# Ignore output files
+*.out
+*.diff
+*.patch
+
+# Ignore binaries or executable files
+*.exe
+*.dll
+*.so
+*.dylib
+
+# Ignore OS-specific files
+Thumbs.db
+
+# Local Terraform directories and lock files
+.terraform/
+.terraform.lock.hcl
+
+# Terraform state files and backup files
+*.tfstate
+*.tfstate.*
+
+# Crash logs
+crash.log
+
+# Extension files and variable files that might contain sensitive data
+*.tfvars
+*.tfvars.json
+
+# Sensitive variable files
+secret.tfvars
+
+# Ignore archive files and backups
+*.zip
+*.tar.gz
+
+# Ignore editor swap files and other temporary files
+*.swp
+*.swo
+*~
+
+# Ignore generated documentation and build artifacts
+*.tfplan
+*.tfplan.json
+
+# IDE and editor specific files
+.vscode/
+.idea/
+.DS_Store
+
+# Ignore log files
+*.log
+
+# Ignore output files
+*.out
+*.diff
+*.patch
+
+# Ignore binaries or executable files
+*.exe
+*.dll
+*.so
+*.dylib
+
+# Ignore OS-specific files
+Thumbs.db
+
