@@ -1,10 +1,10 @@
 provider "aws" {
-  region = "us-west-2"
+  region = "us-east-1"
 }
 
 module "s3_bucket" {
   source = "../modules/s3_buckets"
-  bucket-name = "raha-is-going-to-munich"
+  bucket_name = "raha-will-go-munich"
 
 }
 
