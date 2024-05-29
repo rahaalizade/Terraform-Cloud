@@ -14,4 +14,3 @@ variable "remote_state_bucket" {
 }
 
 variable "force_destroy" {}
-variable "prevent_destroy" {}
