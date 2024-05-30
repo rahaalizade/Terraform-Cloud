@@ -1,6 +1,6 @@
 variable "remote_state_bucket" {
   type    = string
-  default = "remote-state-bucket"
+  default = "raha-new-remote-state-bucket"
 }
 
 variable "force_destroy" {
