@@ -4,7 +4,7 @@ provider "aws" {
 
 module "s3_bucket" {
   source              = "./modules/s3_buckets"
-  first_bucket        = var.first_bucket
+  remote_state_bucket        = var.remote_state_bucket
   force_destroy       = var.force_destroy
 }
 
