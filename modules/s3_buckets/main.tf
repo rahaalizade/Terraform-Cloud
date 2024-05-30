@@ -12,4 +12,14 @@ resource "aws_s3_bucket" "remote_state_bucket" {
   count         = local.bucket_exists ? 0 : 1
   bucket        = var.remote_state_bucket
   force_destroy = var.force_destroy
+  versioning {
+    status = "Enabled"
+  }
 } 
+
+resource "aws_s3_bucket_versioning" "versioning_example" {
+  bucket = aws_s3_bucket.remote_state_bucket.id
+  versioning_configuration {
+    status = "Enabled"
+  }
+}
