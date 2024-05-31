@@ -1,6 +1,6 @@
 variable "region" {
-  type        = string
-  default     = "us-west-2"
+  type    = string
+  default = "us-west-2"
 }
 
 variable "remote_state_bucket" {
@@ -10,6 +10,6 @@ variable "remote_state_bucket" {
 }
 
 variable "force_destroy" {
-  type        = bool
-  default     = false
+  type    = bool
+  default = false
 }
