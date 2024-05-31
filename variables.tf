@@ -6,7 +6,6 @@ variable "region" {
 variable "remote_state_bucket" {
   type        = string
   description = "here is your first bucket"
-  default     = "remote-state-bucket"
 }
 
 variable "force_destroy" {
