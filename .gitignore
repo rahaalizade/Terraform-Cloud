@@ -1,4 +1,6 @@
 backend.tf
+**/.terragrunt-cache/*
+.terragrunt-cache.*
 ./terraform-provider-libvirt
 .terraform/
 ./*.tf
