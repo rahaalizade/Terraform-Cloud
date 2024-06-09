@@ -22,6 +22,6 @@ module "network" {
   vpc_name         = var.vpc_name
   priv_subnet_name = var.priv_subnet_name
   pub_subnet_name  = var.pub_subnet_name
-  region = var.region_location
+  region_location = var.region_location
 
 }
