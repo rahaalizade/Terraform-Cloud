@@ -25,3 +25,7 @@ variable "pub_subnet_name" {
 variable "priv_subnet_name" {
   description = "It's a name for our private subnet"
 }
+
+variable "region_location" {
+  description = "It's the name of region"
+}

@@ -19,7 +19,7 @@ resource "aws_subnet" "pub_subnet" {
   cidr_block = var.cidr_pub_subnet
 
   tags = {
-    Name = "Public-Subnet"
+    Name = var.pub_subnet_name
   }
 }
 
@@ -28,7 +28,7 @@ resource "aws_subnet" "priv_subnet" {
   cidr_block = var.cidr_priv_subnet
 
   tags = {
-    Name = "Private-Subnet"
+    Name = var.priv_subnet_name
   }
 }
 

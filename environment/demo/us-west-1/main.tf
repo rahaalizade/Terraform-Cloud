@@ -20,4 +20,7 @@ module "network" {
   cidr_pub_subnet  = var.cidr_pub_subnet
   cidr_priv_subnet = var.cidr_priv_subnet
   vpc_name         = var.vpc_name
+  priv_subnet_name = var.priv_subnet_name
+  pub_subnet_name  = var.pub_subnet_name
+  region = var.region_location
 }
