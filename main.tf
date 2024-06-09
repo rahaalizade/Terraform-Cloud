@@ -40,3 +40,11 @@ resource "aws_subnet" "priv_subnet" {
     Name = "Private-Subnet"
   }
 }
+
+resource "aws_internet_gateway" "gw" {
+  vpc_id = aws_vpc.my_vpc.id 
+
+  tags = {
+    Name = "InternetGW"
+  }
+}
