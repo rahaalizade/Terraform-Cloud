@@ -1,7 +1,7 @@
 variable "vpc_name" {
   description = "It is my VPC name"
-  type = string
-} 
+  type        = string
+}
 
 variable "cidr_vpc" {
   description = "It's a CIDR block for our VPC"
