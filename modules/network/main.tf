@@ -1,18 +1,3 @@
-terraform {
-  required_providers {
-    aws = {
-      source  = "hashicorp/aws"
-      version = "~> 5.0"
-    }
-  }
-    backend "s3" {
-      bucket = "remote-state-bucket-raha"
-      key    = "stateFolder/network.tfstate"
-      region = "us-east-1"
-      dynamodb_table = "remote-state-bucket-raha"
-  }
-}
-
 provider "aws" {
   region = "us-east-1"
 }
@@ -25,7 +10,7 @@ resource "aws_vpc" "my_vpc" {
   cidr_block = var.cidr_vpc
 
   tags = {
-    Name = "Raha VPC"
+    Name = var.vpc_name
   }
 }
 
