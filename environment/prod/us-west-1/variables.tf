@@ -18,3 +18,10 @@ variable "cidr_priv_subnet" {
   #default     = "10.0.2.0/24"
 }
 
+variable "pub_subnet_name" {
+  description = "It's a name for our private subnet"
+}
+
+variable "priv_subnet_name" {
+  description = "It's a name for our private subnet"
+}
