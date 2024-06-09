@@ -23,20 +23,20 @@ resource "aws_vpc" "my_vpc" {
   }
 }
 
-resource "aws_subnet" "sb01" {
+resource "aws_subnet" "pub_subnet" {
   vpc_id     = aws_vpc.my_vpc.id
   cidr_block = "10.0.1.0/24"
 
   tags = {
-    Name = "Subnet01"
+    Name = "Public-Subnet"
   }
 }
 
-resource "aws_subnet" "sb02" {
+resource "aws_subnet" "priv_subnet" {
   vpc_id     = aws_vpc.my_vpc.id
   cidr_block = "10.0.2.0/24"
 
   tags = {
-    Name = "Subnet02"
+    Name = "Private-Subnet"
   }
 }
