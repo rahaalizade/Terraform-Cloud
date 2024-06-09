@@ -16,7 +16,7 @@ data "aws_availability_zones" "available" {
 }
 
 resource "aws_vpc" "my_vpc" {
-  cidr_block = "10.0.0.0/16"
+  cidr_block = var.cidr_vpc
 
   tags = {
     Name = "Raha VPC"
@@ -25,7 +25,7 @@ resource "aws_vpc" "my_vpc" {
 
 resource "aws_subnet" "pub_subnet" {
   vpc_id     = aws_vpc.my_vpc.id
-  cidr_block = "10.0.1.0/24"
+  cidr_block = var.cidr_pub_subnet
 
   tags = {
     Name = "Public-Subnet"
@@ -34,7 +34,7 @@ resource "aws_subnet" "pub_subnet" {
 
 resource "aws_subnet" "priv_subnet" {
   vpc_id     = aws_vpc.my_vpc.id
-  cidr_block = "10.0.2.0/24"
+  cidr_block = var.cidr_priv_subnet
 
   tags = {
     Name = "Private-Subnet"
