@@ -62,3 +62,8 @@ resource "aws_route_table" "rt" {
     Name = "Internet-RT"
   }
 }
+
+resource "aws_route_table_association" "public_route" {
+  subnet_id      = aws_subnet.pub_subnet.id
+  route_table_id = aws_route_table.rt.id
+}
