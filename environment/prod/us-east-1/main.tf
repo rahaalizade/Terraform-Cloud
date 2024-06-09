@@ -7,7 +7,7 @@ terraform {
   }
     backend "s3" {
       bucket = "remote-state-bucket-raha"
-      key    = "stateFolder/demo/us-east-1/network.tfstate"
+      key    = "stateFolder/prod/us-east-1/network.tfstate"
       region = "us-east-1"
       dynamodb_table = "remote-state-bucket-raha"
   }
