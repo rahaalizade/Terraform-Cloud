@@ -6,11 +6,11 @@ remote_state {
   }
 
   config = {
-    bucket = "remote-state-bucket-raha"
+    bucket = "remote-state-bucket-raha2024"
 
     key            = "${path_relative_to_include()}/terraform.tfstate"
     region         = "us-east-1"
     encrypt        = true
-    dynamodb_table = "remote-state-bucket-raha"
+    dynamodb_table = "remote-state-bucket-raha2024"
 }
 }
