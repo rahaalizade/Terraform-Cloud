@@ -11,8 +11,9 @@ resource "aws_vpc" "my_vpc" {
 }
 
 resource "aws_subnet" "pub_subnet" {
-  vpc_id     = aws_vpc.my_vpc.id
-  cidr_block = var.cidr_pub_subnet
+  vpc_id            = aws_vpc.my_vpc.id
+  cidr_block        = var.cidr_pub_subnet
+  availability_zone = "${var.region_location}a"
 
   tags = {
     Name = var.pub_subnet_name
@@ -20,8 +21,9 @@ resource "aws_subnet" "pub_subnet" {
 }
 
 resource "aws_subnet" "priv_subnet" {
-  vpc_id     = aws_vpc.my_vpc.id
-  cidr_block = var.cidr_priv_subnet
+  vpc_id            = aws_vpc.my_vpc.id
+  cidr_block        = var.cidr_priv_subnet
+  availability_zone = "${var.region_location}a"
 
   tags = {
     Name = var.priv_subnet_name
