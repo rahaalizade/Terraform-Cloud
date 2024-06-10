@@ -3,7 +3,7 @@ include "root" {
 }
 
 terraform {
-    source = "../../../modules/vpc"
+    source = "../../../../modules/vpc"
     extra_arguments "custom_vars" {
     commands = [
       "apply",

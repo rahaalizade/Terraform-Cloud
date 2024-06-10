@@ -3,6 +3,7 @@ include "root" {
 }
 
 terraform {
+    #### Remote module for creating S3 ####
     source = "git::https://github.com/rahaalizade/Terraform-Cloud-Modules.git?ref=v0.1"
     extra_arguments "custom_vars" {
     commands = [
