@@ -1,0 +1,7 @@
+vpc_name         = "prod-us-west-1-vpc"
+cidr_vpc         = "10.40.0.0/16"
+cidr_pub_subnet  = "10.40.1.0/24"
+cidr_priv_subnet = "10.40.2.0/24"
+priv_subnet_name = "prod-west1_priv_subnet"
+pub_subnet_name  = "prod-west1_pub_subnet"
+region_location  = "us-west-1"

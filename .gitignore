@@ -17,9 +17,6 @@ terraform-provider-libvirt
 
 crash.log
 
-*.tfvars
-*.tfvars.json
-
 secret.tfvars
 
 *.tfplan

@@ -1,0 +1,7 @@
+vpc_name         = "test-vpc"
+cidr_vpc         = "10.0.0.0/16"
+cidr_pub_subnet  = "10.0.1.0/24"
+cidr_priv_subnet = "10.0.2.0/24"
+priv_subnet_name = "subnet01"
+pub_subnet_name  = "subnet02"
+region_location  = "us-east-1"

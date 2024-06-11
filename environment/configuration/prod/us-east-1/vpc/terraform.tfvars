@@ -1,0 +1,7 @@
+vpc_name         = "prod-us-east-1-vpc"
+cidr_vpc         = "10.30.0.0/16"
+cidr_pub_subnet  = "10.30.1.0/24"
+cidr_priv_subnet = "10.30.2.0/24"
+priv_subnet_name = "prod-east1_priv_subnet"
+pub_subnet_name  = "prod-east1_pub_subnet"
+region_location  = "us-east-1"

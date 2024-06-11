@@ -1,0 +1,1 @@
+bucket = "raha-goes-munich-2024"
