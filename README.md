@@ -23,3 +23,5 @@ Since it's integrated with terragrunt you have to use these commands:
 4. `terragrunt plan`
 5. `terragrunt apply`
 
+In the end we will have this for our VPC and Subnets with their route tables:
+![vpc_topology](https://github.com/rahaalizade/Terraform-Cloud/assets/53145698/24db9bf0-6ef1-4690-9004-a896bd97f95c)
