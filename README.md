@@ -1,6 +1,7 @@
 # Terraform Cloud Project
     
 This project will create a VPC for you with Public and Private Subnets which it's Internet access has been configured for Private Subnet via NAT GW and for Public Subnet it goes through Internet GW.
+It is integrated with `Terragrunt` with `remote module` and `remote state`.
 
 ![vpc](https://github.com/rahaalizade/Terraform-Cloud/assets/53145698/f1c545e0-11f8-4c83-91d7-42fad0945d1a)
 
